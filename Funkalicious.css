@@ -1,3 +1,7 @@
 p {
 font-size: 200px;
-color: #F4EEAC;}
+color: #F4EEAC;
+background-image: url("http://media.washtimes.com.s3.amazonaws.com/media/image/2016/02/08/HillaryClinton.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
