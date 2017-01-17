@@ -5,28 +5,47 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:100" type="text/css" rel="stylesheet" >
 </head>
 <body>
-<h1></h1>
 
-<div class="fullscreen-bg">
+
+<div class="container">
+
+<div class="thevid">
  <video autoplay big id=ClintVid class="fullscreenVideo">
   <source src="Clinton.mp4" type="video/mp4">
-
-
 </video> 
+<div>
+
+<div class="theimg">
+<img id="Clinton" src="http://media.washtimes.com.s3.amazonaws.com/media/image/2016/02/08/HillaryClinton.jpg"/>
 </div>
 
+<div class="titletext">
+ <p id=VidText onclick="ClintVid.paused? SlideIt() : ClintVid.pause()">And so it begins</p>
+</div>
 
-
-  <p id=VidText onclick="StopIt()">And so it begins</p>
-
+</div>
 <script>
-function StopIt() {
-    document.getElementById("ClintVid").pause();
+
+function SlideIt(){
+
+$(".fullscreenVideo").slideToggle(650, "swing");
+
 }
+
+
+
 </script>
-  
+
+
+ 
+
+
+
+
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+
 
 <script src='java.js'></script>
-
+	
 </body>
 </html>
