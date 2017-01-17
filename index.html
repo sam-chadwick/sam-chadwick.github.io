@@ -8,13 +8,23 @@
 <h1></h1>
 
 <div class="fullscreen-bg">
- <video autoplay big class="fullscreenVideo">
+ <video autoplay big id=ClintVid class="fullscreenVideo">
   <source src="Clinton.mp4" type="video/mp4">
-  
+
+
 </video> 
 </div>
 
-  <p>And so it begins</p>
+
+
+  <p id=VidText onclick="StopIt()">And so it begins</p>
+
+<script>
+function StopIt() {
+    document.getElementById("ClintVid").pause();
+}
+</script>
+  
 
 <script src='java.js'></script>
 

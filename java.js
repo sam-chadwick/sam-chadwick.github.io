@@ -1,1 +1,4 @@
-alert('kinell barry!');
+/*  function StopIt(){
+$('.fullscreenVideo').pause();
+}  
+*/
