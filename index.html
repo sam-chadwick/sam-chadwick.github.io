@@ -1,51 +1,142 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-  <link rel="stylesheet" type="text/css" href="Funkalicious.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:100" type="text/css" rel="stylesheet" >
-</head>
-<body>
+<style>
+
+#header {
+height: 160px;
+width: 100%;
+position: fixed;
+}
 
 
-<div class="container">
+h1 {
+text-align: left;
+z-index:11;
+vertical-align: middle;
 
-<div class="thevid">
- <video autoplay big id=ClintVid class="fullscreenVideo">
-  <source src="Clinton.mp4" type="video/mp4">
-</video> 
-<div>
+position:relative;
+font-family: sans-serif;
 
-<div class="theimg">
-<img id="Clinton" src="http://media.washtimes.com.s3.amazonaws.com/media/image/2016/02/08/HillaryClinton.jpg"/>
-</div>
+border-style: solid;
+border: 1px;
+font-weight: 200;
+font-size:6em;
+width:100%;
+color:white;
+padding-left: 120px;
+padding-top: 110px;
 
-<div class="titletext">
- <p id=VidText onclick="ClintVid.paused? SlideIt() : ClintVid.pause()">And so it begins</p>
-</div>
+}
 
-</div>
-<script>
+html, body {
+width:100%;
+background-color: #282828;
 
-function SlideIt(){
+}
 
-$(".fullscreenVideo").slideToggle(650, "swing");
+.dotwrapper {
+height:550px;
+width: 550px;
+right: 840px;
+top:140px;
+left: 50px;
+position: absolute;
+}
+
+.textbox {
+position: relative;
+width:100%;
+height: 75%;
+float:right;
+margin-top:-18px;
+margin-right: -8px;
+
+}
+
+.dot {
+border-style: none;
+
+background: rgba(30, 200,200, .7);
+color: rgba(30, 200,200, .7);
+height:100%;
+width:100%;
+
+
+left:0px;
+bottom: 300px;
+position:absolute;
+z-index: 10;
+right: 100px;
+top: 220px;
+
+content: '';
+
+
+}
+
+#nav {
+position: relative;
+float:left;
+margin-right: 60px;
+margin-top: 8px;
+margin-left: 50px;
+
+
+}
+a {
+font-family: sans-serif;
+
+color: white;
+font-weight: 500;
+font-size: 1.5em;
 
 }
 
 
+a:hover {
+font-family: sans-serif;
+color: rgba(20, 190,250, .7);
+}
 
-</script>
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+<div id="header">
+<div id="nav">
+<a style="text-decoration:none" href=""> Projects </a> 
+<a style="text-decoration:none" href=""> Philosophy </a> 
+<a style="text-decoration:none" href=""> Contact </a> 
+</div>
 
 
- 
+</div>
 
+<div class="dotwrapper">
 
+<div class="textbox">
+<h1>
+Samuel <br>Chadwick<br>
+<br> Portfolio<br>
+2016
+</h1>
+</div>
+<div class="dot">
 
+</div>
+</div>
+</div>
 
-<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-
-
-<script src='java.js'></script>
-	
 </body>
+
+
+
+
+
+
+
 </html>
